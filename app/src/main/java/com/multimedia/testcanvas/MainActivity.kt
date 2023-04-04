@@ -28,8 +28,10 @@ class MainActivity : ComponentActivity() {
                         verticalArrangement = Arrangement.spacedBy(16.dp),
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
-                        ProgressBar(0.3f)
-                        ParabolicProgressBar(0.8f)
+//                        ProgressBar(0.3f)
+//                        ParabolicProgressBar(0.8f)
+                        LineChart(mutableListOf(2,4,6,7,5), listOf("1","df","dfd","sddsd","dewefd"),listOf("1","df","dfd",""))
+//                        GraphDiagram(numbers = mutableListOf(2,4,6,7,5))
                     }
                 }
             }

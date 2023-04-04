@@ -14,7 +14,6 @@ fun ProgressBar(progress: Float) {
     Canvas(modifier = Modifier.size(200.dp)) {
         val strokeWidth = 10.dp.toPx()
         val sweep = progress * 360
-
         // Рисуем фон круга
         drawArc(
             color = Color.LightGray,
