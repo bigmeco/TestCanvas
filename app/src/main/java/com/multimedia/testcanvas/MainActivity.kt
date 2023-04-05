@@ -1,5 +1,6 @@
 package com.multimedia.testcanvas
 
+import Calendar
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -37,12 +38,13 @@ class MainActivity : ComponentActivity() {
 //                        LineChart(mutableListOf(2,4,6,7,5), listOf("1","df","dfd","sddsd","dewefd"),listOf("1","df","dfd",""))
 //                        GraphDiagram(numbers = mutableListOf(2,4,6,7,5))
 
-                        val currencies = listOf(
-                            Pair("USD", 90.0),
-                            Pair("EUR", 90.0),
-                            Pair("GBP", 100.0)
-                        )
-                        CurrencyTable(currencies = currencies)
+//                        val currencies = listOf(
+//                            Pair("USD", 90.0),
+//                            Pair("EUR", 90.0),
+//                            Pair("GBP", 100.0)
+//                        )
+//                        CurrencyTable(currencies = currencies)
+                        Calendar()
                     }
                 }
             }
