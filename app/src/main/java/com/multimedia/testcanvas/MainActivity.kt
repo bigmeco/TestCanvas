@@ -29,13 +29,13 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     Column(
-                        Modifier.padding(16.dp),
+                        Modifier.padding(24.dp),
                         verticalArrangement = Arrangement.spacedBy(16.dp),
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
-//                        ProgressBar(0.3f)
+                        ProgressBar(0.3f)
 //                        ParabolicProgressBar(0.8f)
-//                        LineChart(mutableListOf(2,4,6,7,5), listOf("1","df","dfd","sddsd","dewefd"),listOf("1","df","dfd",""))
+//                        LineChart(mutableListOf(2,4,6,7,5), listOf("test","test","test","test","test"),listOf("1","2","3",""))
 //                        GraphDiagram(numbers = mutableListOf(2,4,6,7,5))
 
 //                        val currencies = listOf(
@@ -44,7 +44,7 @@ class MainActivity : ComponentActivity() {
 //                            Pair("GBP", 100.0)
 //                        )
 //                        CurrencyTable(currencies = currencies)
-                        Calendar()
+//                        Calendar()
                     }
                 }
             }

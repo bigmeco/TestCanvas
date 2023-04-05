@@ -22,7 +22,7 @@ fun Calendar() {
     Canvas(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp),
+            .padding(68.dp),
         onDraw = {
             val daysInMonth = monthYear.getActualMaximum(Calendar.DAY_OF_MONTH)
             val firstDayOfMonth =
@@ -34,7 +34,6 @@ fun Calendar() {
             var x = 0f
             var y = 0f
             var day = 1
-
 
             // Рисуем заголовок
             drawIntoCanvas { canvas ->
@@ -114,8 +113,8 @@ fun Calendar() {
                 drawIntoCanvas { canvas ->
                     canvas.nativeCanvas.drawText(
                         day.toString(),
-                        x + 16.dp.toPx(), y + 32.dp.toPx(),
-                        Paint().apply { textSize = 18.sp.toPx() })
+                        x + 16.dp.toPx(), y + 16.dp.toPx(),
+                        Paint().apply { textSize = 20.sp.toPx() })
                 }
                 x += cellWidth
                 day++
